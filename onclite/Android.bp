@@ -48,23 +48,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "com.fingerprints.extension@2.0",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/com.fingerprints.extension@2.0.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libloc_api_v02",
 	owner: "xiaomi",
 	strip: {
@@ -407,26 +390,8 @@ dex_import {
 	system_ext_specific: true,
 }
 
-prebuilt_etc {
-	name: "android.hardware.biometrics.fingerprint@2.1-service.rc",
-	owner: "xiaomi",
-	src: "proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc",
-	filename_from_src: true,
-	sub_dir: "init",
-	soc_specific: true,
-}
-
 prebuilt_etc_xml {
-	name: "com.fingerprints.extension.xml",
-	owner: "xiaomi",
-	src: "proprietary/vendor/etc/permissions/com.fingerprints.extension.xml",
-	filename_from_src: true,
-	sub_dir: "permissions",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "android.hardware.biometrics.fingerprint@2.1-service.xml",
+	name: "android.hardware.biometrics.fingerprint@2.1-service",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml",
 	filename_from_src: true,
@@ -461,20 +426,3 @@ prebuilt_etc_xml {
 	soc_specific: true,
 }
 
-cc_prebuilt_binary {
-	name: "android.hardware.biometrics.fingerprint@2.1-service",
-	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
