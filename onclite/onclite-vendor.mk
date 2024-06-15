@@ -1553,7 +1553,6 @@ PRODUCT_PACKAGES += \
     ims \
     qcrilmsgtunnel \
     com.fingerprints.extension \
-    vendor.qti.hardware.alarm-V1.0-java \
     vendor.qti.hardware.soter-V1.0-java \
     com.qti.dpmframework \
     com.qualcomm.qti.imscmservice-V2.0-java \
