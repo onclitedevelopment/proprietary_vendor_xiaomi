@@ -948,6 +948,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/onclite/proprietary/vendor/lib/libgcs-ipc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-ipc.so \
     vendor/xiaomi/onclite/proprietary/vendor/lib/libgcs-osal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-osal.so \
     vendor/xiaomi/onclite/proprietary/vendor/lib/libgcs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs.so \
+    vendor/xiaomi/onclite/proprietary/vendor/lib/libgpustats.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpustats.so \
     vendor/xiaomi/onclite/proprietary/vendor/lib/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgsl.so \
     vendor/xiaomi/onclite/proprietary/vendor/lib/libhal_dbg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhal_dbg.so \
     vendor/xiaomi/onclite/proprietary/vendor/lib/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdr_tm.so \
@@ -1119,6 +1120,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/onclite/proprietary/vendor/lib/libscvePanorama_lite.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscvePanorama_lite.so \
     vendor/xiaomi/onclite/proprietary/vendor/lib/libsdm-color.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-color.so \
     vendor/xiaomi/onclite/proprietary/vendor/lib/libsdm-diag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-diag.so \
+    vendor/xiaomi/onclite/proprietary/vendor/lib/libsdm-disp-vndapis.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-disp-vndapis.so \
     vendor/xiaomi/onclite/proprietary/vendor/lib/libsdmextension.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdmextension.so \
     vendor/xiaomi/onclite/proprietary/vendor/lib/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdsprpc.so \
     vendor/xiaomi/onclite/proprietary/vendor/lib/libsensor1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensor1.so \
@@ -1131,6 +1133,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/onclite/proprietary/vendor/lib/libsymphony-cpu.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsymphony-cpu.so \
     vendor/xiaomi/onclite/proprietary/vendor/lib/libsymphonypower.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsymphonypower.so \
     vendor/xiaomi/onclite/proprietary/vendor/lib/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsysmon_cdsp_skel.so \
+    vendor/xiaomi/onclite/proprietary/vendor/lib/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermalclient.so \
     vendor/xiaomi/onclite/proprietary/vendor/lib/libthermalfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermalfeature.so \
     vendor/xiaomi/onclite/proprietary/vendor/lib/libtinycompress_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinycompress_vendor.so \
     vendor/xiaomi/onclite/proprietary/vendor/lib/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml2_1.so \
@@ -1306,6 +1309,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/onclite/proprietary/vendor/lib64/libgnss.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgnss.so \
     vendor/xiaomi/onclite/proprietary/vendor/lib64/libgnsspps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgnsspps.so \
     vendor/xiaomi/onclite/proprietary/vendor/lib64/libgps.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgps.utils.so \
+    vendor/xiaomi/onclite/proprietary/vendor/lib64/libgpustats.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpustats.so \
     vendor/xiaomi/onclite/proprietary/vendor/lib64/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgsl.so \
     vendor/xiaomi/onclite/proprietary/vendor/lib64/libhdcpsrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcpsrm.so \
     vendor/xiaomi/onclite/proprietary/vendor/lib64/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_tm.so \
@@ -1410,6 +1414,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/onclite/proprietary/vendor/lib64/libscvePanorama_lite.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscvePanorama_lite.so \
     vendor/xiaomi/onclite/proprietary/vendor/lib64/libsdm-color.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-color.so \
     vendor/xiaomi/onclite/proprietary/vendor/lib64/libsdm-diag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-diag.so \
+    vendor/xiaomi/onclite/proprietary/vendor/lib64/libsdm-disp-vndapis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-disp-vndapis.so \
     vendor/xiaomi/onclite/proprietary/vendor/lib64/libsdmextension.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdmextension.so \
     vendor/xiaomi/onclite/proprietary/vendor/lib64/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdsprpc.so \
     vendor/xiaomi/onclite/proprietary/vendor/lib64/libsecureui.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui.so \
@@ -1424,6 +1429,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/onclite/proprietary/vendor/lib64/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssd.so \
     vendor/xiaomi/onclite/proprietary/vendor/lib64/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsysmon_cdsp_skel.so \
     vendor/xiaomi/onclite/proprietary/vendor/lib64/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsystem_health_mon.so \
+    vendor/xiaomi/onclite/proprietary/vendor/lib64/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthermalclient.so \
     vendor/xiaomi/onclite/proprietary/vendor/lib64/libthermalfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthermalfeature.so \
     vendor/xiaomi/onclite/proprietary/vendor/lib64/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtime_genoff.so \
     vendor/xiaomi/onclite/proprietary/vendor/lib64/libtinycompress_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinycompress_vendor.so \
@@ -1541,9 +1547,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/onclite/proprietary/vendor/radio/qcril_database/upgrade/9_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/9_version_update_ecc_table.sql
 
 PRODUCT_PACKAGES += \
-    libgpustats \
-    libsdm-disp-vndapis \
-    libthermalclient \
     CACertService \
     CneApp \
     FingerprintExtensionService \
