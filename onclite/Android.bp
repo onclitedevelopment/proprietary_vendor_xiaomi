@@ -14,10 +14,10 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
-		android_arm: {
+		: {
 			srcs: ["proprietary/vendor/lib/libgpustats.so"],
 		},
-		android_arm64: {
+		: {
 			srcs: ["proprietary/vendor/lib64/libgpustats.so"],
 		},
 	},
@@ -34,10 +34,10 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
-		android_arm: {
+		: {
 			srcs: ["proprietary/vendor/lib/libsdm-disp-vndapis.so"],
 		},
-		android_arm64: {
+		: {
 			srcs: ["proprietary/vendor/lib64/libsdm-disp-vndapis.so"],
 		},
 	},
@@ -54,10 +54,10 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
-		android_arm: {
+		: {
 			srcs: ["proprietary/vendor/lib/libthermalclient.so"],
 		},
-		android_arm64: {
+		: {
 			srcs: ["proprietary/vendor/lib64/libthermalclient.so"],
 		},
 	},
@@ -395,7 +395,7 @@ dex_import {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.biometrics.fingerprint@2.1-service",
+	name: "android.hardware.biometrics.fingerprint@2.1-service.xml",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml",
 	filename_from_src: true,
@@ -404,7 +404,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.gnss@2.1-service-qti",
+	name: "android.hardware.gnss@2.1-service-qti.xml",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml",
 	filename_from_src: true,
@@ -413,7 +413,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "manifest_android.hardware.drm-service.widevine",
+	name: "manifest_android.hardware.drm-service.widevine.xml",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm-service.widevine.xml",
 	filename_from_src: true,
@@ -422,7 +422,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.qti.gnss@4.0-service",
+	name: "vendor.qti.gnss@4.0-service.xml",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml",
 	filename_from_src: true,
